@@ -1,14 +1,16 @@
 [
   {
-    "question": "### Question 1\nWhich statement about dynamic groups is true?",
+    "question": "### Question 1\nChoose three which three statements are true about GLOBAL TEMPORARY TABLES?",
     "selections": {
-      "A": "They define what Data Science principals, such as users and resources, have access to in OCI.",
-      "B": "They are individual users that are grouped in OCI by administrators and granted access to Data Science resources within compartments.",
-      "C": "They have matching rules, where is replaced by the identifier of the compartment created for Data Science.",
-      "D": "They are a logical grouping of resources that can be accessed only by certain groups that have received administrator permission."
+      "A": "GLOBAL TEMPORARY TABLE rows inserted by a session are available to any other session whose user has been granted selected on the table",
+      "B": "A TRUNCATE command issues in a session causes all rows in a GLOBAL TEMPORARY TABLE for the issuing session to be deleted.",
+      "C": "A GLOBAL TEMPORARY TABLE's definition is available to multiple sessions;",
+      "D": "Any GLOBAL TEMPORARY TABLE rows exsting at session termination will be deleted",
+      "E": "A DELETE comand on GLOBAL TEMPORARY TABLE cannot be rolled back",
+      "F": "GLOBAL TEMPORARY TABLE space allocation occurs at session start."
     },
-    "answers": ["C"],
-    "summary": "### 选项分析与考点总结\n\n选项分析:\n- A 错误：动态组本身并不定义权限，而是通过匹配规则动态收集资源，权限由策略(Policy)赋予。\n- B 错误：这是用户组(User Group)的描述，动态组并非手动添加用户，而是自动根据规则包含相关资源。\n- C 正确：准确描述了动态组的本质——通过匹配规则（如包含特定compartment-id）自动收录资源作为成员。\n- D 错误：描述的是普通资源分组/compartment，而非动态组的核心特性（动态匹配规则）。\n\n考点总结:\n动态组(Dynamic Group)是OCI中一种自动分组机制，通过规则自动将满足条件的资源归入组内，常用于无人工交互的服务身份认证，需搭配IAM策略使用。",
-    "suggestion": "### 应试技巧与学习建议\n- 牢记动态组的核心是“自动匹配规则”，而非手动添加用户或定义权限。\n- 区分动态组与用户组(User Group)的本质区别：动态组由资源自动归类，用户组由具体用户/账号手动加入。\n- 理解动态组与IAM策略的配套使用关系：动态组负责资源归类，IAM策略负责授权。"
+    "answers": ["B", "C", "D"],
+    "summary": "### 选项分析与考点总结\n\n选项分析:\n- A 错误：全局临时表（GTT）中的数据是会话隔离或事务隔离的，一个会话无法看到另一个会话插入的数据，即使拥有该表的 SELECT 权限也无法跨会话查看数据。\n- B 正确：TRUNCATE 命令会清空当前会话在临时表中的所有行，但不会影响其他会话的数据。\n- C 正确：GTT 的表结构（定义）是静态存储在数据字典中的，对所有拥有权限的会话都可见且可用。\n- D 正确：临时表的数据生命周期受会话或事务控制，在会话结束（Termination）时，该会话的所有临时数据都会被自动删除。\n- E 错误：在临时表上执行的 DELETE 操作是标准的 DML 语句，是可以被回滚（Rollback）的。\n- F 错误：临时表的空间分配（Space Allocation）不是在会话启动时，而是在会话第一次向该临时表中插入数据（第一条 DML）时才动态分配。\n\n考点总结:\n本题考查 Oracle 中全局临时表（GTT）的核心特性。GTT 的特点是“表结构共享，数据会话隔离”。其主要控制参数包括 `ON COMMIT PRESERVE ROWS`（会话级）和 `ON COMMIT DELETE ROWS`（事务级）。",
+    "suggestion": "### 应试技巧与学习建议\n- **核心特征牢记**：记住“结构大家用，数据各管各”。跨会话（Session）绝对无法共享数据，排除所有提到跨会话读写数据的选项（如A）。\n- **空间分配时机**：临时表在未插入数据前是不占用任何临时表空间段的，只有在“第一次执行 INSERT”时才会分配空间，而非会话启动（排除F）。\n- **DML与DDL区分**：TRUNCATE 是 DDL 无法回滚且直接清空当前会话数据（B正确）；DELETE 是 DML，完全可以回滚（排除E）。"
   }
 ]
