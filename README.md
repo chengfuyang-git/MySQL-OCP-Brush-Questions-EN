@@ -1,4 +1,4 @@
-# MySQL 8.0 OCP 英文题库刷题助手
+# Oracle题库刷单助手
 
 ## 开始使用
 
@@ -6,16 +6,10 @@
 | -------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | DBA - 082                  | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/082.html)          | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/single-082.html)      |
 | DBA - 083                  | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/083.html)          | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/single-083.html)      |
-| DBA - 908                  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/)          | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single.html)      |
-| Developer - 909            | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/909.html)  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-909.html)  |
-| AI Vector - 184            | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/184.html)  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-184.html)  |
-| OCI Data Science - 1110    | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/1110.html) | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-1110.html) |
-| APEX Cloud Developer - 771 | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/771.html)  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-771.html)  |
-| OCI Generative AI - 1127   | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/1127.html) | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-1127.html) |
 
 ## 背景
 
-为了帮助自己更好地备考 MySQL 8.0 OCP 908/909 等 Oracle 系列认证，我精心打造了这款网页版刷题工具。它不仅完善了现有的题库，还优化了用户体验，让备考过程更加高效、便捷。
+为了帮助自己更好地学习oracle 19c ocp，我上传了082和083两个科目的题库，用于没事练习。
 
 ## 简单说明
 
@@ -29,6 +23,7 @@
 ## 特别感谢
 
 特别感谢 [@汉高祖](https://www.nodeseek.com/post-325453-1) 、[@sekkoo](https://www.cnblogs.com/sekkoo)提供的宝贵信息。如果没有你的无私分享，就没有这个项目。
+我的仓库是fork的，原项目地址：https://github.com/hochenggang/MySQL-OCP-Brush-Questions-EN
 
 ## 有效性
 
