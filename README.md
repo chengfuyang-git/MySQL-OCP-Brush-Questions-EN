@@ -4,6 +4,8 @@
 
 | 题库名称                   | 刷题版                                                                           | 单页打印版                                                                              |
 | -------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| DBA - 082                  | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/082.html)          | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/single-082.html)      |
+| DBA - 083                  | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/083.html)          | [点我打开](https://chengfuyang-git.github.io/MySQL-OCP-Brush-Questions-EN/single-083.html)      |
 | DBA - 908                  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/)          | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single.html)      |
 | Developer - 909            | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/909.html)  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-909.html)  |
 | AI Vector - 184            | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/184.html)  | [点我打开](https://hochenggang.github.io/MySQL-OCP-Brush-Questions-EN/single-184.html)  |
