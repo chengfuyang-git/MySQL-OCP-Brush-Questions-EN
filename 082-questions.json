@@ -10,6 +10,7 @@
       "F":"GLOBAL TEMPORARY TABLE space allocation occurs at session start."
     ],
     "answers": ["B", "C", "D"],
-    "summary": ""
+    "summary": "",
+	"suggestion":""
   }
 ]
