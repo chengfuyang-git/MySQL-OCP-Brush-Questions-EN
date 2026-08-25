@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "question": "1、choose three which three statements are true about GLOBAL TEMPORARY TABLES?",
+    "options": [
+      "A、B.GLOBAL TEMPORARY TABLE rows inserted by a session are available to any other session whose user has been granted selected on the table",
+      "B、F.A TRUNCATE command issues in a session causes all rows in a GLOBAL TEMPORARY TABLE for the issuing session to be deleted.",
+      "C、D.A GLOBAL TEMPORARY TABLE's definition is available to multiple sessions;",
+      "D、C.Any GLOBAL TEMPORARY TABLE rows exsting at session termination will be deleted",
+      "E、A.A DELETE comand on GLOBAL TEMPORARY TABLE cannot be rolled back",
+      "F、E.GLOBAL TEMPORARY TABLE space allocation occurs at session start."
+    ],
+    "answer": ["B", "C", "D"],
+    "isMultiple": true
+  }
+]
